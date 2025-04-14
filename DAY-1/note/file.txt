@@ -1,8 +1,12 @@
 Aujourd'hui nous avons debuté avec le cours de Node js
-Nous avons commencé par les revisions en JavaScript (du assez basique!)
+
+Pour le suivi de notre évolution nous avons créé un repository avec une structure de base que nous allons 
+push tout au long du cours.
+
+Ensuite, nous avons commencé par les revisions en JavaScript (du assez basique!)
 Deja les prerequis, installation de nodejs, nmp, yarn, wsl... etc mises à jour
 Passant par la creation des variables, constances, tableaux, objets, affichages, 
 les boucles (while, for, do while)
 
-Pour le suivi de notre évolution nous avons créé un repository avec une structure de base que nous allons 
-push tout au long du cours
+Nous avons évolué par la suite avec les fonctions, les templates, les conditions et la façon dont on 
+pouvait importer les portions de code dans nos futurs projets
