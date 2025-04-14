@@ -1,0 +1,8 @@
+Aujourd'hui nous avons debuté avec le cours de Node js
+Nous avons commencé par les revisions en JavaScript (du assez basique!)
+Deja les prerequis, installation de nodejs, nmp, yarn, wsl... etc mises à jour
+Passant par la creation des variables, constances, tableaux, objets, affichages, 
+les boucles (while, for, do while)
+
+Pour le suivi de notre évolution nous avons créé un repository avec une structure de base que nous allons 
+push tout au long du cours
