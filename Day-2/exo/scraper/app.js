@@ -30,9 +30,8 @@ async function scrapeTable() {
 
     // Écriture dans un fichier texte
     const filePath = './buteurs.json'
-    const content = players.map(p => `${p.Nom} | ${p.Nationalité} | ${p.Buts} buts | ${p.Matchs} matchs`).join('\n');
-    await fs.writeFile(filePath, content, 'utf8')
-    console.log('Les données ont été enregistrées! 😇')
+    await fs.writeFile(filePath, JSON.stringify(players, null, 2), 'utf8')
+    console.log('Les données ont été enregistrées! 😇✅')
 
   } catch (error) {
     console.error('Erreur lors du scraping:', error.message)
