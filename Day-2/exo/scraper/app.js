@@ -34,9 +34,8 @@ async function scrapeTable() {
 
 }
 
-scrapeTable()
-
-
-
-
+scrapeTable().then()fs.appendFile('database.json', scrapeTable(), function (err) {   
+  if (err) throw err;   
+  console.log('Fichier créé !')
+})
 

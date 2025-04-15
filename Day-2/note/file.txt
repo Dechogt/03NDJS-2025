@@ -1,0 +1,26 @@
+########### C'est le Day 2 dans notre apprentissage de Node Js #############
+😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎
+
+Notion de callback:  😑😑😑
+
+()=>{
+    instructions;
+}
+ici on recoit l'information et on la traite directement
+
+Notion de promises:  😶‍🌫️😶‍🌫️😶‍🌫️
+Ici on fait quelque chose d'abord avant de traiter l'information
+ C'est une opération qui consiste à promettre de resoudre une fonction et ensuite on effectue les 
+ instructions nécéssaires après avec l'opérateur then
+
+ const fs = require("fs").promises; 
+
+Async/await
+
+Nous avons implémenter ces notions dans un projet de scraping 😒😒
+Les concepts sont encore flous et déjà on doit implémenter!!! 
+Pour cela on initialise on projet avec inti -y biensur dans un dossier et moi j'ai créé mon fichier
+app.js pour travailler dessus, j'ai fait une fonction async avec l'aide de cheerio et quelques recherche
+via l'IA. Etape suivante c'est d'écrire le resultat dans un fichier .json et de le conserver comme
+ma base de données. Pour cela on utiliser le fs (file system offert par node) 😪😪😪
+
