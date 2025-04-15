@@ -1,6 +1,5 @@
-const fs = require('fs')
+//const fs = require('fs')
 const cheerio = require('cheerio')
-
 
 async function scrapeTable() {
   try {
@@ -34,8 +33,4 @@ async function scrapeTable() {
 
 }
 
-scrapeTable().then()fs.appendFile('database.json', scrapeTable(), function (err) {   
-  if (err) throw err;   
-  console.log('Fichier créé !')
-})
-
+scrapeTable()
