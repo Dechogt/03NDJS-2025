@@ -1,0 +1,122 @@
+[
+  {
+    "Nom": "Cristiano Ronaldo",
+    "Nationalité": "2002-2022",
+    "Buts": "Sporting Portugal (0), Manchester United (22), Real Madrid (105), Juventus (14)",
+    "Matchs": "1"
+  },
+  {
+    "Nom": "Lionel Messi",
+    "Nationalité": "2004-2023",
+    "Buts": "FC Barcelone (120), Paris SG (9)",
+    "Matchs": "0"
+  },
+  {
+    "Nom": "Robert Lewandowski",
+    "Nationalité": "2011-",
+    "Buts": "Borussia Dortmund (17), Bayern Munich (69), FC Barcelone (19)",
+    "Matchs": "0"
+  },
+  {
+    "Nom": "Karim Benzema",
+    "Nationalité": "2005-2023",
+    "Buts": "Olympique lyonnais (12), Real Madrid (78)",
+    "Matchs": "0"
+  },
+  {
+    "Nom": "Raúl",
+    "Nationalité": "1995-2011",
+    "Buts": "Real Madrid (66), Schalke 04 (5)",
+    "Matchs": "0"
+  },
+  {
+    "Nom": "Ruud van Nistelrooy",
+    "Nationalité": "1998-2009",
+    "Buts": "PSV Eindhoven (9), Manchester United (38), Real Madrid (13)",
+    "Matchs": "4"
+  },
+  {
+    "Nom": "Andriy Chevtchenko",
+    "Nationalité": "1994-2011",
+    "Buts": "Dynamo Kiev (22), AC Milan (33), Chelsea FC (4)",
+    "Matchs": "11"
+  },
+  {
+    "Nom": "Thomas Müller",
+    "Nationalité": "2009-",
+    "Buts": "Bayern Munich (57)",
+    "Matchs": "0"
+  },
+  {
+    "Nom": "Kylian Mbappé",
+    "Nationalité": "2016-",
+    "Buts": "AS Monaco (6), Paris SG (42), Real Madrid (7)",
+    "Matchs": "0"
+  },
+  {
+    "Nom": "Mohamed Salah",
+    "Nationalité": "2012-",
+    "Buts": "FC Bâle (5), Chelsea FC (0) AS Rome (1), Liverpool FC (45)",
+    "Matchs": "4"
+  },
+  {
+    "Nom": "Thierry Henry",
+    "Nationalité": "1997-2012",
+    "Buts": "AS Monaco (7), Arsenal FC (35), FC Barcelone (9)",
+    "Matchs": "1"
+  },
+  {
+    "Nom": "Filippo Inzaghi",
+    "Nationalité": "1997-2010",
+    "Buts": "Juventus (17), AC Milan (33)",
+    "Matchs": "4"
+  },
+  {
+    "Nom": "Erling Haaland",
+    "Nationalité": "2019-",
+    "Buts": "Red Bull Salzbourg (8), Borussia Dortmund (15), Manchester City (26)",
+    "Matchs": "0"
+  },
+  {
+    "Nom": "Alfredo Di Stéfano",
+    "Nationalité": "1955-1964",
+    "Buts": "Real Madrid (49)",
+    "Matchs": ""
+  },
+  {
+    "Nom": "Zlatan Ibrahimović",
+    "Nationalité": "2001-2021",
+    "Buts": "Ajax Amsterdam (7), Juventus (3), Inter Milan (6), FC Barcelone (4), AC Milan (9), Paris SG (20), Manchester United (0)",
+    "Matchs": "1"
+  },
+  {
+    "Nom": "Eusébio",
+    "Nationalité": "1961-1974",
+    "Buts": "Benfica (47)",
+    "Matchs": ""
+  },
+  {
+    "Nom": "Sergio Agüero",
+    "Nationalité": "2008-2021",
+    "Buts": "Atlético de Madrid (8), Manchester City (39), FC Barcelone (0)",
+    "Matchs": "6"
+  },
+  {
+    "Nom": "Alessandro Del Piero",
+    "Nationalité": "1995-2009",
+    "Buts": "Juventus (44)",
+    "Matchs": "2"
+  },
+  {
+    "Nom": "Didier Drogba",
+    "Nationalité": "2003-2015",
+    "Buts": "Olympique de Marseille (5), Chelsea FC (36), Galatasaray (3)",
+    "Matchs": "0"
+  },
+  {
+    "Nom": "Neymar",
+    "Nationalité": "2013-2023",
+    "Buts": "FC Barcelone (21), Paris SG (22)",
+    "Matchs": "0"
+  }
+]
