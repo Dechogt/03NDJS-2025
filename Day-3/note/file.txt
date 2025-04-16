@@ -20,3 +20,6 @@ Construction de notre projet:
 
 Une variable d'environnement c'est le deuxieme paramètre du jwt.sign pour générer une clé 
 secrete nécéssaire pour la connection au sein d'un compte admin
+
+Pour ce soir, je veux evoluer la tête tranquille, j'ajoute un fichier .gitignore et .env je laisse un
+petit commentaire au sein de ces fichiers
