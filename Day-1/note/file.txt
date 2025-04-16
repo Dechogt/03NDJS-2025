@@ -1,0 +1,23 @@
+Mes débuts avec Node.js ⛳⛳⛳
+Hey, Bienvenue dans cet apprentissage de note Node js...
+Pour les bonnes pratiques, nous allons nous assurer que tout est en place
+pour ce nouveau chapitre de la tech😇 
+
+Pour cela, nous installer node, suivant la documentation officielle
+ensuite nous installerons les managers de paquets, npm, yarn, nvm
+Pour les besoins d'arborescence, nous allons partir sous celle de Linux en 
+intégrant le wsl dans notre powershell ou command prompt. 
+
+Cette etape faite, nous pouvons demarrer: 
+    - Ajout de nodejs sous linux, biensur il faut mettre la machine (sous linux) à jour
+    via un update && upgrade
+
+    - Revisions de la syntaxe de javaScript (Variables, constantes, fonctions, loop et conditions)
+    - Creation des fonctions pour exporter plus tard et utiliser dans un autre fichier
+
+
+Attention au type de module, commonjs et module: tres important pour la manière dont les
+les modules seront importés.
+
+Exemple avec les fonctions mathématiques élémentaires.
+// Ici j'ai utilisé le type module 👌.
