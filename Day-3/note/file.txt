@@ -1,0 +1,22 @@
+🧠🧠🧠 C'est le jour 3 dans notre apprentissage de Node.js ⛳
+J'ai déjà préparé mon ./Day-3 et sa structure comme prevue.
+
+Nous avons commencé par initialisé un projet dans le dossier /express_serveur
+ensuite on installe les dependances de mongoose via npm puis on ajoute express.
+
+Construction de notre projet:
+ Creation d'un folder db qui contient les fichiers de notre base de données mongoose
+ Creation d'un folder models qui contient les modeles de la base de données
+ Creation d'un folder routes qui contient les routes de notre projet
+ Creation d'un folder controllers qui contient les routes authentifiées du projet
+ 
+ User.js est une modele d'utilisateur bien defini pour notre base de données
+ ./models/auth.js ###
+ ./controlleurs/auth.js ### Où seront definies les 
+ ./routes/auth.js ### C'est où sont declarées les routes de notre projet. et gerer avec la valeur express
+ ./server.js c'est le main de notre projet, où seront injectées les différents fichiers necessaires au 
+ demarrage 
+ 
+
+Une variable d'environnement c'est le deuxieme paramètre du jwt.sign pour générer une clé 
+secrete nécéssaire pour la connection au sein d'un compte admin
