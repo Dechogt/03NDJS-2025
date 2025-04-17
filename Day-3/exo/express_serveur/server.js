@@ -1,21 +1,22 @@
-import express from "express"
-import connectDB from "./db/connectDB.js"
-import authRoutes from "./routes/auth.js"
+import express from "express";
+import connectDB from "./db/connectDB.js";
+import authRoutes from "./routes/auth.js";
 
-//connect to the database
-connectDB()
+// connect db
+connectDB();
 
-//initialize express
-const app = express()
+// init express
+const app = express();
 
-//and the middleware here
+// any middleware here
 
-//API routes
-app.use("/api/v1", authRoutes)
+// API routes
+app.use("/api/v1/", authRoutes);
 
-// any error handler middleware here
+// any error handler here
 
-const port= process.env.port || 5000;
+const port = process.env.PORT || 5000; // .env PORT or Hard coded
+
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`)
-})
+  console.log(`Server running on port ${port}`);
+});

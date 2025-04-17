@@ -28,7 +28,7 @@ async function scrapeTable() {
 
     console.log(players)
 
-    // Écriture dans un fichier texte
+    // Écriture dans un fichier
     const filePath = './buteurs.json'
     await fs.writeFile(filePath, JSON.stringify(players, null, 2), 'utf8')
     console.log('Les données ont été enregistrées! 😇✅')
