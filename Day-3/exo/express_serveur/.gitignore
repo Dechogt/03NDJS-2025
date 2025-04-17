@@ -1,6 +1,6 @@
 # J'utilise ce fichier pour ignorer les fichiers et dossiers que je ne veux pas suivre dans mon dépôt Git
 
-/node_modules
+node_modules/
 .env
 
 
