@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose';
+import { Schema, model } from 'mongoose'
 
 const userSchema = new Schema({
     email: {
@@ -7,12 +7,7 @@ const userSchema = new Schema({
       unique: true,
         trim: true,
         lowercase: true,
-        validate: {
-          validator: function (v) {
-            return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(v);
-          },
-          message: (props) => `${props.value} is not a valid email!`,
-        },
+        match: [/^[\w.-]+@[\w-]+\.[a-zA-Z]{2,}$/, 'Email non valide !']
     },
 
     password: String,
@@ -23,4 +18,4 @@ const userSchema = new Schema({
     
   });
   
-  export const User = model("User", userSchema);
+  export const User = model("User", userSchema)

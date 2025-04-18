@@ -1,16 +1,16 @@
-import { User } from '../models/file.js'
+import {User} from '../models/file.js' 
 
-exports.createUser = async (req, res) => {
+export const createUser = async (req, res) => {
   try {
     const newUser = new User(req.body)
     const savedUser = await newUser.save()
     res.status(201).json(savedUser)
   } catch (err) {
-    res.status(400).json({ message: err.message }) 
+    res.status(400).json({ message: err.message })
   }
 }
 
-exports.getAllUsers = async (req, res) => {
+export const getAllUsers = async (req, res) => {
   try {
     const users = await User.find()
     res.json(users)
@@ -19,7 +19,8 @@ exports.getAllUsers = async (req, res) => {
   }
 }
 
-exports.getUserById = async (req, res) => {
+// Récupérer un utilisateur par ID
+export const getUserById = async (req, res) => {
   try {
     const user = await User.findById(req.params.id)
     if (!user) {
@@ -43,7 +44,7 @@ exports.getUserById = async (req, res) => {
 //   }
 // }
 
-exports.deleteUser = async (req, res) => {
+export const deleteUser = async (req, res) => {
   try {
     const user = await User.findByIdAndDelete(req.params.id)
     if (!user) {
@@ -54,6 +55,3 @@ exports.deleteUser = async (req, res) => {
     res.status(500).json({ message: err.message })
   }
 }
-
-// export default { createUser, getAllUsers, getUserById, updateUser, deleteUser }
-export default userController

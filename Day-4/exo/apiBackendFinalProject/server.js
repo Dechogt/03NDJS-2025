@@ -7,10 +7,7 @@ const port = process.env.PORT || 3000
 
 app.use(express.json())
 
-mongoose.connect("mongodb://localhost:107835/api", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
+mongoose.connect("mongodb://localhost:27017/authAPI")
 .then(() => console.log("Connecté à MongoDB"))
 .catch(err => console.error("Erreur de connexion à MongoDB:", err))
 

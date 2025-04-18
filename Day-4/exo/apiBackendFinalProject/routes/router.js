@@ -1,18 +1,13 @@
 import express from 'express'
-const Router = express.Router()
-import userController from '../controllers/Controller.js' 
-import authenticate from '../middleware/file.js'  
+const router = express.Router()
+import { createUser, getAllUsers, getUserById, deleteUser } from '../controllers/controller.js'
 
-Router.post('/', userController.createUser)
+router.post('/', createUser)
 
-Router.get('/', userController.getAllUsers)
+router.get('/', getAllUsers)
 
-Router.get('/:id', userController.getUserById)
+router.get('/:id', getUserById)
 
-Router.delete('/:id', userController.deleteUser)
+router.delete('/:id', deleteUser)
 
-Router.get('/me', authenticate, (req, res) => {
-    res.send(req.user);
-  });
-
-export default Router
+export default router
