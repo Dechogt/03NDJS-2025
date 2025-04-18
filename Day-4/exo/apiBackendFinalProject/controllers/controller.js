@@ -1,13 +1,14 @@
-import {User} from '../models/file.js' 
+import {User} from '../models/file.js'
+import bcrypt from 'bcryptjs' 
 
 export const createUser = async (req, res) => {
-  try {
-    const newUser = new User(req.body)
-    const savedUser = await newUser.save()
-    res.status(201).json(savedUser)
-  } catch (err) {
-    res.status(400).json({ message: err.message })
-  }
+  const { email, password } = req.body
+  const hash = await bcrypt.hash(password, 10)
+  const newUser = new User({ email, password: hash, isAdmin: false })
+  const saved = await newUser.save()
+  // Cacher l'implementation du hashage
+  const { password: pwd, ...userSafe } = saved.toObject()
+  res.status(201).json(userSafe)
 }
 
 export const getAllUsers = async (req, res) => {
@@ -19,7 +20,6 @@ export const getAllUsers = async (req, res) => {
   }
 }
 
-// Récupérer un utilisateur par ID
 export const getUserById = async (req, res) => {
   try {
     const user = await User.findById(req.params.id)
