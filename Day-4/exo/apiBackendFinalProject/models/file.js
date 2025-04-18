@@ -1,3 +1,5 @@
+import { Schema, model } from "mongoose"
+
 const userSchema = new Schema({
   email: {
     type: String,
@@ -12,7 +14,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
     minlength: [8, 'Le mot de passe doit contenir au moins 8 caractères!'],
-    maxlength: [32, 'Le mot de passe doit contenir au maximum 32 caractères!'],
+    maxlength: [64, 'Le mot de passe doit contenir au maximum 64 caractères!'],
     match: [/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/, "Le mot de passe doit inclure des lettres et des chiffres!"]
   },
 
@@ -22,3 +24,6 @@ const userSchema = new Schema({
     default: false,
   }
 })
+
+//export default mongoose.model('User', userSchema)
+export const User = model("User", userSchema)

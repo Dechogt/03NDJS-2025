@@ -9,10 +9,7 @@ const port = process.env.PORT || 3000
 
 app.use(express.json())
 
-mongoose.connect(process.env.MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
+mongoose.connect(process.env.MONGODB_URI)
 .then(() => console.log("Connecté à MongoDB"))
 .catch(err => console.error("Erreur de connexion à MongoDB:", err))
 
@@ -24,4 +21,17 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Serveur démarré sur le port ${port}`)
-});
+})
+
+app.use((req, res, next) => {
+  res.status(404).json({ error: 'Route non trouvée' })
+})
+
+// gestionnaire d’erreurs JSON
+app.use((err, req, res, next) => {
+  console.error(err);
+  const status = err.status || 500
+  res.status(status).json({
+    error: err.message || 'Erreur serveur',
+  })
+})
